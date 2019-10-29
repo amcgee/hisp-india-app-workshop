@@ -41,4 +41,6 @@ Accessible DHIS2 instance : https://debug.dhis2.org/dev (admin/district)
 
 - Static assets (images)
 - Hindi / Nepali translation support
-- Synchronous
+- Synchronous request
+- Windows cross-drive support (Yarn PnP)
+- Spaces in directory path
