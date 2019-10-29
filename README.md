@@ -30,4 +30,13 @@ OR
 
 - [App Platform](https://platform.dhis2.nu)
 - [App Runtime](https://runtime.dhis2.nu)
+  - [Query Playground](https://runtime.dhis2.nu/playground)
 - [UI Core Library](https://ui-core.dhis2.nu)
+
+Accessible DHIS2 instance : https://debug.dhis2.org/dev (admin/district)
+
+## Suggested Improvements
+
+- Static assets (images)
+- Hindi / Nepali translation support
+- Synchronous
