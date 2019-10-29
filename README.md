@@ -4,6 +4,8 @@
 
 [GIS Manager App](./gis-manager)
 
+https://dhis2-gis-manager.netlify.com
+
 ## Docs
 
 - [App Platform Presentation](./docs/DHIS2-app-workshop.pdf)

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDataQuery } from '@dhis2/app-runtime'
 import { Button } from '@dhis2/ui-core'
 import { OrgUnitTable } from './OrgUnitTable'
@@ -6,18 +6,26 @@ import { OrgUnitTable } from './OrgUnitTable'
 const query = {
     "orgUnits": {
         "resource": "organisationUnits",
-        "params": ({ page }) => {
+        "params": ({ page, search, filter }) => {
             return {
                 "pageSize": 5,
                 "page": page,
-                "fields": ["id", "displayName", "level", "path"]
+                "fields": ["id", "displayName", "level", "geometry"],
+                "filter": search ? `displayName:like:${search}` : filter === 'invalid' && `geometry:null`
             }
         }
     }
 }
 
-function AppContent() {
+function AppContent({ search, filter }) {
     const { loading, error, data, refetch } = useDataQuery(query)
+
+    useEffect(() => {
+        refetch({
+            search,
+            filter
+        })
+    }, [search, filter])
 
     if (loading) {
         return <div>Loading...</div>

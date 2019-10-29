@@ -21,3 +21,13 @@ h3 {
   width: 100%;
   text-align: center;
 }
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.controls > div {
+  margin: 0 32px 0 0;
+}

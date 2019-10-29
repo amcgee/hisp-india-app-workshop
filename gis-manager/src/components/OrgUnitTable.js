@@ -1,5 +1,6 @@
 import React from 'react'
-import { Table, TableRowHead, TableCellHead, TableHead, TableBody, TableRow, TableCell, Button } from '@dhis2/ui-core'
+import { Table, TableRowHead, TableCellHead, TableHead, TableBody, TableRow, TableCell } from '@dhis2/ui-core'
+import { UserCount } from './UserCount'
 
 export const OrgUnitTable = ({ orgUnits }) => {
     return <Table>
@@ -15,13 +16,16 @@ export const OrgUnitTable = ({ orgUnits }) => {
                     Level
                 </TableCellHead>
                 <TableCellHead>
-
+                    Users
+                </TableCellHead>
+                <TableCellHead>
+                    Geometry Type
                 </TableCellHead>
             </TableRowHead>
         </TableHead>
         <TableBody>
             {orgUnits.map(function (orgUnit) {
-                return <TableRow>
+                return <TableRow key={orgUnit.id}>
                     <TableCell>
                         {orgUnit.id}
                     </TableCell>
@@ -32,7 +36,10 @@ export const OrgUnitTable = ({ orgUnits }) => {
                         {orgUnit.level}
                     </TableCell>
                     <TableCell>
-                        <Button>Edit</Button>
+                        <UserCount orgUnitID={orgUnit.id} />
+                    </TableCell>
+                    <TableCell>
+                        {orgUnit.geometry ? orgUnit.geometry.type : 'NONE'}
                     </TableCell>
                 </TableRow>
             })}
