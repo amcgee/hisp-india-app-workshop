@@ -23,6 +23,6 @@ OR
 
 ## Resources
 
-[App Platform](https://platform.dhis2.org)
-[App Runtime](https://runtime.dhis2.org)
-[UI Core Library](https://ui-core.dhis2.org)
+- [App Platform](https://platform.dhis2.org)
+- [App Runtime](https://runtime.dhis2.org)
+- [UI Core Library](https://ui-core.dhis2.org)
