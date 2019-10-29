@@ -44,3 +44,5 @@ Accessible DHIS2 instance : https://debug.dhis2.org/dev (admin/district)
 - Synchronous request
 - Windows cross-drive support (Yarn PnP)
 - Spaces in directory path
+- Support multiple filters!
+- App.css in boilerplate (not styled-jsx)
