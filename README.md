@@ -4,6 +4,11 @@
 
 [GIS Manager App](./gis-manager)
 
+## Docs
+
+- [App Platform Presentation](./docs/DHIS2-app-workshop.pdf)
+- [DHIS2 Design System](./docs/DHIS2-design-system.pdf)
+
 ## Case
 
 http://bit.ly/dhis2case
