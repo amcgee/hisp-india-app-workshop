@@ -23,7 +23,8 @@ function AppContent({ search, filter }) {
     useEffect(() => {
         refetch({
             search,
-            filter
+            filter,
+            page: 1
         })
     }, [search, filter])
 
