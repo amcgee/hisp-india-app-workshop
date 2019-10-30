@@ -13,5 +13,11 @@ export const SearchInput = ({ onChange }) => {
         }
     }, [onChange, value])
 
-    return <InputField label="Search" name="search" value={value} placeholder="Search..." onChange={e => setValue(e.target.value)}></InputField>
+    return <InputField
+        label="Search"
+        name="search"
+        value={value}
+        placeholder="Search..."
+        onChange={e => setValue(e.target.value)}
+    />
 }
