@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import AppContent from './components/AppContent'
 import { SearchInput } from './components/SearchInput'
 import './App.css'
-import { Checkbox, RadioGroup } from '@dhis2/ui-core'
+import { RadioGroup } from '@dhis2/ui-core'
 
 const MyApp = () => {
     const [search, setSearch] = useState(null)

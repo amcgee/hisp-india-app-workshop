@@ -34,6 +34,7 @@ OR
 - [App Runtime](https://runtime.dhis2.nu)
   - [Query Playground](https://runtime.dhis2.nu/playground)
 - [UI Core Library](https://ui-core.dhis2.nu)
+- [DHIS2 Design System](https://github.com/dhis2/design-system)
 
 Accessible DHIS2 instance : https://debug.dhis2.org/dev (admin/district)
 
